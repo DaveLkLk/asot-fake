@@ -1,0 +1,78 @@
+picture{
+    display: block;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+input::-webkit-inner-spin-button{
+    display: none;
+}
+
+@font-face {
+    font-family: futura-black;
+    src: url(../fonts/futura/Futura\ Extra\ Black\ font.ttf);
+}
+@font-face {
+    font-family: futura-book;
+    src: url(../fonts/futura/Futura\ Book\ Italic\ font.ttf);
+}
+@font-face {
+    font-family: glitch;
+    src: url(../fonts/doctor_glitch/Doctor\ Glitch.otf);
+}
+@font-face {
+    font-family: akira;
+    src: url(../fonts/akira_expanded/Akira\ Expanded\ Demo.otf);
+}
+@font-face {
+    font-family: futura-book;
+    src: url(../fonts/futura/Futura\ Book\ Italic\ font.ttf);
+}
+
+::-webkit-scrollbar{
+    background: #000000;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--color4);
+}
+::-webkit-scrollbar-button{
+    background-color: var(--color4);
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: futura-book;
+}
+html{
+    scroll-behavior: smooth;
+    /* scroll-padding-top: 90px; */
+}
+:root{
+    --color1: #f7f7f7;
+    --color2: #07080c;
+    --color3: #5c0973ac;
+    --color4: #b933d6e2;
+    --background1: var(--color1);
+    --debug: 1px solid red;
+    --padding1: 1em;
+
+    --border-btn: #74029a;
+}
+
+body{
+    background: var(--color2);
+    color: var(--color1);
+    position: relative;
+}

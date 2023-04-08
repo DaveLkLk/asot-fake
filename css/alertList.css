@@ -1,0 +1,24 @@
+.form--alert{
+    padding: 10px;
+    background-color: #20202079;
+    color: #0dc80d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    
+}
+.form--alert button{
+    display: block;
+    border: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+    transition: transform .3s linear;
+}
+.form--alert button:hover{transform: scale(1.05);}
+.form--hidden {display: none;}

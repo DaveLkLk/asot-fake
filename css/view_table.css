@@ -1,0 +1,133 @@
+img{
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image:
+                    linear-gradient(to right, #5615a175, #4f2283b4, #7b34cc84), 
+                    url(../assets/armin.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    position: sticky;
+}
+
+.container--date h3{
+    margin: 1em auto 0;
+    font-family: akira;
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container--database{
+    margin: 2em auto 0;
+}
+    .container--table{
+        height: auto;
+        width: 100%;
+    }
+    .container--table table{
+        margin: 2em auto 0;
+        background: #300b419e;
+    }
+    /* ALERT LIST - TABLE */
+    .container--table .tr--alert th{
+        border-radius: 5px;
+        background: #056405ac;
+    }
+    /* ******************** */
+
+    .container--table td{
+        text-align: center;
+        padding: .2em .5em;
+    }
+    .container--table .td--title{
+        background: #470371;
+        padding: .5em;
+    }
+    .container--table .td--list{
+        border: 1px solid #5d5d5d;
+    }
+        .td--list-buttons{
+            display: flex;
+            gap: 1em;
+            flex-wrap: nowrap;
+        }
+        .td--list-buttons a{
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 5px 10px;
+            border: none;
+            color: #ffffff;;
+            opacity: 0.7;
+        }
+        .td--list-buttons a:hover{opacity: 1;}
+        .td--list-buttons a:nth-child(1){
+            background-color: green;
+        }
+        .td--list-buttons a:nth-child(2){
+            background-color: red;
+        }
+
+    .container--table .td--list:hover{
+        background: #640d8c;
+    }
+    .container--table tr:hover:not(tr:first-child:hover){
+        background: #300b41;
+    }
+
+    .update--form{
+        width: 100%;
+        height: 100%;
+        margin: 2em 0 0;
+    }
+    .update--form form{
+        width: 300px;
+        overflow: hidden;
+        margin: auto;
+        display: grid;
+        gap: 1.5em;
+        padding: 1em;
+        background: #1002348d;
+        box-shadow:
+            -1px -1px 1px 1px #acacace6,
+            -4px -4px 5px 1px #a7a7a7d1,
+            1px 1px 1px 1px #000000d9,
+            4px 4px 5px 1px #000000c6;
+    }
+
+    .update--form .form__group{
+        display: grid;
+        gap: .5em;
+    }
+    .update--form label{
+        color: #969696;
+    }
+    .update--form input{
+        background: #29292986;
+        color: #d8d8d8;
+    }
+    .update--form input, .update--form button{
+        padding: .5em;
+        border-radius: 5px;
+    }
+    .update--form button{
+        border: none;
+        cursor: pointer;
+        color: white;
+        padding: .7em;
+        transition: background-color .5s;
+        background-color: #9ba105c6;
+    }
+    .update--form button:hover{
+        background-color: #9fa202;
+    }
