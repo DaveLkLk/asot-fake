@@ -1,4 +1,5 @@
 <?php
+    include("./php/database.php");
     $shortcut_icon = "./assets/asot-logo.png";
     $css_url1 = "./css/reset.css";
     $css_url2 = "./css/nav.css";
@@ -9,7 +10,6 @@
     $nav_text = "VIEW STATE USERS";
     $nav_url = "./view_table.php";
     include("./includes/head.php");
-    include("./php/database.php");
 ?>
 
 <body>
